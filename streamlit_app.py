@@ -28,7 +28,7 @@ def add_data_to_google_sheet(name, email, message):
     scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/spreadsheets",
              "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
 
-    creds = ServiceAccountCredentials.from_json_keyfile_name('client_secret_79345116573-kbgj3a5sgufjq485gjglmtkmb8vo6u80.apps.googleusercontent.com.json', scope)
+    creds = ServiceAccountCredentials.from_json_keyfile_name('https://github.com/krauseinafrica/streamlitform/blob/221072253bdf19db131b4e9602ff77aab4715aa2/client_secret_79345116573-kbgj3a5sgufjq485gjglmtkmb8vo6u80.apps.googleusercontent.com.json', scope)
     client = gspread.authorize(creds)
 
     # Replace with your Google Sheet URL
